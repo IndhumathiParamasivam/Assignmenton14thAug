@@ -4,7 +4,7 @@ xmlhttp.onload = () =>
     {
         let responsedata = xmlhttp.response;
         let responseinJSON = JSON.parse(responsedata);
-        let countrieswithexpectedpopulation = responseinJSON.filter(countryDetails => countryDetails.population>10000000)
+        let countrieswithexpectedpopulation = responseinJSON.filter(countryDetails => countryDetails.population>100000000)
                                                             .map( cntry => {
                     let eachcountry={};
                     eachcountry["name"]=cntry["name"];
